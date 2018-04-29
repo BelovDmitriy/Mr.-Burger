@@ -1,0 +1,43 @@
+.best {
+    
+  background-image: url("../img/second_page/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.section__title--best {
+    color:#2f3234;
+    padding: 0;
+    margin-bottom: rem(60px);
+}
+
+.best__content {
+display: flex;
+margin-bottom: 90px;
+margin-top: 60px;
+width: 100%; }
+
+.best__content--item {
+width: 50%;
+margin: 0 ;
+text-align: center; }
+
+.best__description--title{
+font-family: 'lifehackmedium';
+font-size: 24px;
+padding-bottom: 10px;
+line-height: 1.42;
+}
+
+.best__description--text {
+font-family: 'ubuntulight';
+font-size: 14px;
+line-height: 1.42;
+color: #838281;
+ }
+
+                               
