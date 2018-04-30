@@ -176,13 +176,13 @@ ul {
   border-radius: 50%;
   background: #fff; }
   .sidebar__dot:hover {
-    background-color: #71240f; }
+    background-color: #cb411b; }
 
 .sidebar__circle-active {
   border-color: #fff; }
 
 .sidebar__dot-active {
-  background-color: #71240f; }
+  background-color: #cb411b; }
 
 .sidebar__circle:hover {
   border-color: #ffffff; }

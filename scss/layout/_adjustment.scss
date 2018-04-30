@@ -77,14 +77,14 @@ height: 100%;
     border-radius: 50%;
     background: #fff;
     &:hover{
-    background-color: darken($orange, 27%)
+    background-color: darken($orange, 7%)
   }}
 
   .sidebar__circle-active{ 
     border-color: #fff;
    }
    .sidebar__dot-active{
-       background-color: darken($orange, 27%)}
+       background-color: darken($orange, 7%)}
 
 
   
