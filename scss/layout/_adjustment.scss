@@ -43,7 +43,7 @@ height: 100%;
     }
 }
 
-.button_color_black{
+.order-link_color_black{
     background-color: rgba(0, 0, 0, 0.31);
     cursor: pointer;
     border: rgba(0, 0, 0, 0.31);
@@ -80,7 +80,11 @@ height: 100%;
     background-color: darken($orange, 27%)
   }}
 
- 
+  .sidebar__circle-active{ 
+    border-color: #fff;
+   }
+   .sidebar__dot-active{
+       background-color: darken($orange, 27%)}
 
 
   
