@@ -1,6 +1,8 @@
 .wrapper {
+    position: relative;
 width: 100%;
 height: 100%;
+
 }
 
 .maincontent {
@@ -9,7 +11,8 @@ height: 100%;
 }
 
 .container{
-    width: 940px;
+    width: 95%;
+    max-width: 940px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -20,15 +23,16 @@ height: 100%;
 .section {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.31);
-    min-width: 940px;
-    min-height: 650px;
+    min-width: rem(940px);
+    min-height: rem(650px);
+    display: flex;
 }
 
 .order-link{
     min-width: rem(98px);
     padding: rem(10px) rem(17px);
-    margin-top: 5px;
-    border-radius: 5px;
+    margin-top: rem(5px);
+    border-radius: rem(5px);
     background-color: $orange;
     color: #fff;
     text-decoration: none;
@@ -38,6 +42,8 @@ height: 100%;
     text-transform: uppercase;
     transition: .5s;
     display: inline-block;
+    border: rgba(0, 0, 0, 0.31);
+    cursor: pointer;
     &:hover{
         background-color: darken($orange, 27%)
     }
@@ -49,22 +55,38 @@ height: 100%;
     border: rgba(0, 0, 0, 0.31);
 }
 
+.order-link_color_white {
+    margin-left: rem(10px);
+    background-color: transparent;
+    text-transform: unset;
+    transition: .3s; 
+    cursor: pointer;
+     &hover {
+        background-color: darken($orange, 27%)
+    }}
+
+
 .sidebar {
     display: block;
     position: fixed;
-    top: 80px;
-    right: 60px;
+    top: rem(80px);
+    right: rem(60px);
     z-index: 1;
+    @include tablets{display: none}
+    @include phones{display: none}
+
   }
 
 .sidebar__circle {
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     display: inline-block;
     border: 1px solid transparent;
     border-radius: 50%;
     position: relative;
     vertical-align: middle;
+    transition: 1s;
+    
   }
   
   .sidebar__dot {
@@ -72,22 +94,80 @@ height: 100%;
     bottom: 50%;
     right: 50%;
     transform: translate(50%, 50%);
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background: #fff;
-    &:hover{
-    background-color: darken($orange, 7%)
-  }}
+   }
 
   .sidebar__circle-active{ 
     border-color: #fff;
    }
    .sidebar__dot-active{
-       background-color: darken($orange, 7%)}
+       background-color: darken($orange, 7%)
+    }
 
 
   
 .sidebar__circle:hover {
  border-color: #ffffff;
   }
+
+  .sidebar__circle:hover .sidebar__dot {
+    background-color: darken($orange, 7%);transition: 1s;
+     }
+
+    
+.hamburger__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.hamburger__menu {
+    margin-left: 1.875rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background: transparent;
+    top: 5%;
+    right: 17%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.hamburger__menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 1.5625rem;
+    height: 1.5625rem;}
+
+    .hamburger__menu-item {
+        display: block;
+        width: 100%;
+        height: 20%;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 25%;
+    }
+    
+.hamburger__menu {
+    @include tablets{visibility: visible;}
+    @include phones{visibility: visible;}
+    }
+
+    .header__menu{@include tablets{display: none;}}

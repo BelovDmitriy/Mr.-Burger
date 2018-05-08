@@ -1,0 +1,171 @@
+
+
+
+.map {
+    background-image: url("../img/contacts_page/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;   
+    height: 100%;
+    min-height: 40.625rem;
+    display: flex;
+    overflow: hidden;}
+
+    .footer_container{width: rem(920px);
+      margin: 0 auto;}
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-image: url("../img/contacts_page/bg1.jpg");
+        height: rem(55px); }
+       
+      
+      .footer__wrapper {
+      
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        height: 100%; }
+       
+      
+      .socials {
+        display: flex;
+        margin: rem(15px) rem(60px) rem(0px) rem(0px); }
+
+                 
+         .footer__phone:before {
+          content: "";
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: rem(17px);
+          height: rem(17px);
+          background: url("../img/contacts_page/tel.png") center center no-repeat;
+          margin-right: rem(10px);
+      }
+      .footer__phone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: $orange;
+        font-family: 'ubunturegular';
+        font-size: 0.875rem;
+        text-decoration: none;
+        font-weight: 700;
+        margin: rem(0px) rem(0px) rem(0px) rem(80px);}
+        
+      
+      
+      
+      .footer__adress {
+        color: #fff;
+        font-family: 'ubuntulight';
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+        margin: rem(10px) rem(0px) rem(0px) rem(80px);
+        font-size: rem(14px); }
+        
+        .footer__right {
+           display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          width: 50%;
+          min-height: 3.75rem;
+      }
+
+      .social__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .social__item {
+      margin-right: 1.25rem;
+  }
+
+  .social__link {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    width: 1.4375rem;
+    height: 1.4375rem;
+}
+
+.social__img-vk {
+  display: block;
+  width: 1.4375rem;
+  height: 1.4375rem;
+  background: url(../img/contacts_page/sp1.png) -0.625rem 0.25rem no-repeat;
+}
+     
+.social__img-vk:hover {
+  background: url(../img/contacts_page/sp2.png) -0.625rem 0.25rem no-repeat;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;}
+
+  .social__img-fb {
+    display: block;
+    width: 1.4375rem;
+    height: 1.4375rem;
+    background: url(../img/contacts_page/sp1.png) -0.625rem -1.4375rem no-repeat;}
+
+    .social__img-fb:hover {
+      background: url(../img/contacts_page/sp2.png) -0.625rem -1.4375rem no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+  }
+
+  .social__img-inst {
+    display: block;
+    width: 1.4375rem;
+    height: 1.4375rem;
+    background: url(../img/contacts_page/sp1.png) -0.5625rem -3.3125rem no-repeat;
+  }
+
+    .social__img-inst:hover {
+      background: url(../img/contacts_page/sp2.png) -0.5625rem -3.3125rem no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+  }
+
+  .social__img-tw {
+    display: block;
+    width: 1.4375rem;
+    height: 1.4375rem;
+    background: url(../img/contacts_page/sp1.png) -0.5625rem -5rem no-repeat;}
+
+    .social__img-tw:hover {
+      background: url(../img/contacts_page/sp2.png) -0.5625rem -5rem no-repeat;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+  }
