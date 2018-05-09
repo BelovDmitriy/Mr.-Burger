@@ -1,130 +1,155 @@
 .team {
-    background-image: url(../img/team_page/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; 
+  background-image: url(../img/team_page/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  &__box{
+    width: 50%;
+    padding-top: rem(105px);
+    display: flex;
     
-  }
-  
-  .team__wrapper {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    background-color: rgba(#2f3234, .93);
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: rgba(22, 22, 22, 0.7);
-    @include tablets {-ms-flex-preferred-size: 100%;
-      flex-basis: 100%;flex-direction: column;
+    text-align: center;
+    @include tablets {
+      width: 100%;
+      flex-direction: column;
       align-items: center;
       justify-content:center;
-    text-align: center}
-      @include phones {flex-direction: column;
+    text-align: center;
+    }
+      @include phones {
+        width: 100%;
+        flex-direction: column;
           align-items: center;
-          justify-content:center;
-          text-align: center}
+          justify-content:center;}
+    
+
   }
-  
-  .team__content {
-    width: 65%; }
-  
-  .section__title_team {
-    margin-bottom: rem(46px); }
-  
-  .teammate__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  &__item{
+   margin-bottom: rem(35px);
+   @include tablets {
     width: 100%;
-    margin-bottom: rem(25px);
-    height: 0;
-    overflow: hidden; }
-  
-  .accordeon__item_active .teammate__info {
-    height: rem(110px); }
-  
-  .accordeon__item_active .teammate__name {
-    color: $yellow; }
-    .accordeon__item_active .teammate__name:before {
-      -ms-flex-item-align: start;
-      align-self: flex-start;
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg); }
-  
-  .teammate__name {
-    font-family: 'gagalinregular';
-    font-size: rem(14px);
-    font-weight: normal;
-    color: #fff;
-    margin-bottom: rem(20px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-decoration: none; }
-    .teammate__name:before {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-item-align: end;
-      align-self: flex-end;
-      content: '';
-      border-top: rem(5px) solid $yellow;
-      border-bottom: rem(5px) solid transparent;
-      border-left: rem(5px) solid transparent;
-      border-right: rem(5px) solid transparent;
-      margin-right: rem(10px); }
-  
-  .teammate__icon {
-    width: rem(100px);
-    height: rem(100px);
-    border-radius: 50%;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 rem(15px); 
-    background-image: url(../img/team_page/team.jpg);}
-  
-  .teammate__desc {
-    width: 80%;
-    font-family: "Ubuntu";
-    color: #fff;
-    font-size: rem(14px);
-   }
-  
-  .teammate__prof {
-    font-weight: 700;
-    margin-bottom: rem(5px); }
-  
-  .teammate__text {
-    font-weight: 300; }
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  text-align: center;
+  }
+    @include phones {
+      width: 100%;
+      flex-direction: column;
+        align-items: center;
+        justify-content:center;}
+   
+   &--active{
+     .team__trigger{
+       color:$yellow;
+     }
+     .team__trigger::before{
+       transform: rotate(180deg);
+     }
 
-    .accordeon__item{ @include tablets {flex-direction: column;
-      align-items: center;
-      justify-content:center;
-    text-align: center}
-      @include phones {flex-direction: column;
-          align-items: center;
-          justify-content:center;}}
-
-          .team__content{ @include tablets {flex-direction: column;
+     .team__item{
+      justify-content: space-between;
+      width: 100%;
+    
+     }
+     .team__content-wrap{
+       height: 100px;
+       
+       @include tablets {-ms-flex-preferred-size: 100%;
+        flex-basis: 100%;flex-direction: column;
+        align-items: center;
+        justify-content:center;
+      text-align: center}
+        @include phones {flex-direction: column;
             align-items: center;
             justify-content:center;
-          text-align: center}
-            @include phones {flex-direction: column;
-                align-items: center;
-                justify-content:center;}}
+            text-align: center}
+     }
+   }
+
+  }
+  &__trigger{
+    font-family: "gagalinregular";
+    font-size: rem(14px);
+    color: #fff;
+    margin-bottom: rem(17px);
+    display: flex;
+    align-items: center;
+   
+    &::before{
+      content:'';
+      display: block;
+      border: rem(10px) solid transparent;
+      border-top: rem(10px) solid $yellow;
+      margin-right: rem(10px);
+      margin-top: -rem(5px);
+      transition: 1s;
+    }
+  }
+&__content-wrap{
+  height: 0;
+  overflow: hidden;
+  transition: 2s;
+}
+&__content{
+  display: flex;
+ 
+}
+&__description{
+  margin-left: rem(15px);
+  width: rem(225px)
+}
+  &__photo{
+    width: rem(100px);
+    height: rem(100px);
+    overflow: hidden;
+    border-radius: 50%;
+    position: 50%;
+  
+    
+  }
+ 
+}
+
+.section__title_team {
+  margin-bottom: rem(46px); }
+
+  .team__list{align-items: center;
+    justify-content: center;
+    
+    
+    @include tablets {flex-direction: column;
+      align-items: center;
+      justify-content:center;
+    text-align: center;
+    }
+      @include phones {flex-direction: column;
+          align-items: center;
+          justify-content:center;}
+
+  }
+
+  .team__ocup {
+    font-weight: 700;
+    margin-bottom: rem(5px);
+  color: #fff;
+  text-align: start; }
+  
+  .team__text {
+    font-weight: 300;
+  color: #fff;
+  display: flex;
+  text-align: start; 
+ }
+ .team__list {  
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+ }
+
+  
+
+
+
