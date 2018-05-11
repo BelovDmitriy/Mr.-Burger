@@ -1,7 +1,7 @@
 
 
 
-.map {
+.contacts {
     background-image: url("../img/contacts_page/bg.jpg");
     background-size: cover;
     background-position: center center;
@@ -12,7 +12,7 @@
     display: flex;
     overflow: hidden;}
 
-    .footer_container{width: rem(920px);
+    .footer__container{width: rem(920px);
       margin: 0 auto;}
 
     .footer {
@@ -62,7 +62,7 @@
         font-size: 0.875rem;
         text-decoration: none;
         font-weight: 700;
-        margin: rem(0px) rem(0px) rem(0px) rem(80px);}
+        }
         
       
       
@@ -72,8 +72,8 @@
         font-family: 'ubuntulight';
         font-size: 0.875rem;
         font-weight: 300;
-        line-height: 1.5rem;
-        margin: rem(10px) rem(0px) rem(0px) rem(80px);
+        line-height: 0;
+        
         font-size: rem(14px); }
         
         .footer__right {
@@ -101,20 +101,8 @@
       margin-right: 1.25rem;
   }
 
-  .social__link {
-    content: "";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: transparent;
-    width: 1.4375rem;
-    height: 1.4375rem;
+  .social__link {   
+    display: flex;   
 }
 
 .social__img-vk {
@@ -169,3 +157,65 @@
       -o-transition: .5s;
       transition: .5s;
   }
+
+  .foot__contacts {
+    float: right;
+    width: 25%;
+    margin: 25px 0 20px;
+}
+
+.soc__list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.soc__list .soc__item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.soc__list .soc__item:nth-child(1) a {
+  background-position: 0 0;
+}
+.soc__list .soc__item:nth-child(1) a:hover {
+  background-position: 0px 50px;
+  transition: .2s;
+}
+
+.soc__list .soc__item:nth-child(4) a {
+  background-position: 50px 0;
+}
+.soc__list .soc__item:nth-child(4) a:hover {
+  background-position: 50px 50px;
+  transition: .2s;
+}
+.soc__list .soc__item:nth-child(3) a {
+  background-position: 100px 0;
+}
+.soc__list .soc__item:nth-child(3) a:hover {
+  background-position: 100px 50px;
+  transition: .2s;
+}
+.soc__list .soc__item:nth-child(2) a {
+  background-position: 150px 0;
+}
+.soc__list .soc__item:nth-child(2) a:hover {
+  background-position: 150px 50px;
+  transition: .2s;
+}
+
+
+ .soc__list .soc__item .soc__link{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background: url(../img/contacts_page/sprite.svg);
+  overflow: hidden;
+  text-indent: 1000px;
+  white-space: nowrap;
+}
