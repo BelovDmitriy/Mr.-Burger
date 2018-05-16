@@ -22,7 +22,7 @@ width: 100%;
   align-items: center;
   justify-content:center;} }
 
-.best__content--item {
+.best__content-item {
 width: 50%;
 margin: 0 ;
 text-align: center;
@@ -32,7 +32,7 @@ margin: rem(10px) rem(10px);
 }
 .best__description{@include tablets {flex-direction: row;
 } }
-.best__description--title{
+.best__description-title{
 font-family: 'lifehackmedium';
 font-size: rem(24px);
 padding-bottom: rem(10px);
@@ -41,7 +41,7 @@ margin-top: rem(0px);
 margin-bottom: rem(0px);
 }
 
-.best__description--text {
+.best__description-text {
 font-family: 'ubuntulight';
 font-size: rem(14px);
 line-height: 1.42;

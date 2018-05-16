@@ -37,7 +37,7 @@
       
 
                  
-         .footer__contacts--phone:before {
+         .footer__contacts-phone:before {
           content: "";
          display: flex;
           width: rem(17px);
@@ -45,7 +45,7 @@
           background: url("../img/contacts_page/tel.png") center center no-repeat;
           margin-right: rem(10px);
       }
-      .footer__contacts--phone {
+      .footer__contacts-phone {
       
         display: flex;
         -ms-flex-wrap: nowrap;
@@ -63,7 +63,7 @@
       
       
       
-      .footer__contacts--adress {
+      .footer__contacts-adress {
         color: #fff;
         font-family: 'ubuntulight';
         font-size: 0.875rem;
@@ -73,7 +73,7 @@
       
 
 
-.footer__social {
+.social__content {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -83,11 +83,11 @@
       align-items: center;
   }
 }
-.footer__social--list {
+.social__list {
   display: flex;
 }
 
-.footer__social--item {
+.social__item {
   font-size: 0;
   margin-left: rem(15px);
   &:first-child {
@@ -97,7 +97,7 @@
 
 
 
-.footer__social--icon {
+.social__icon {
   width: rem(20px);
   height: rem(20px);
   fill: #fff;
