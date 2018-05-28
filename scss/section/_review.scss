@@ -71,3 +71,33 @@ filter: gray;
         color: #fff;
         margin-bottom: rem(20px);
         overflow: hidden;}    
+
+        .order--grey {
+            border-radius: 0.3125rem;
+            -webkit-box-align: baseline;
+            -webkit-align-items: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+            width: 6.25rem;
+            height: 2.375rem;
+            background-color: #2f3234;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 130px; }
+            @media screen and (max-width: 480px) {
+              .order--grey {
+                margin: 0 auto;
+                width: 8.125rem; } }
+
+                .review__popup {
+                    display: none;
+                    margin: 10% 10%;
+                    border-radius: 10px; }
+
+                    .review_name--black {
+                        color: black;
+                        font-family: 'gagalinregular';
+                        font-size: 0.875rem;
+                        margin-bottom: 20px; }

@@ -22,16 +22,27 @@
         position: relative;
         }
        
+        .slider__burgers{
+            width: rem(880px);
+            overflow: hidden;
+        }
 
                     
-                   
+       .burgers__content{
+           display: flex;
+           transition: 1s;
+       }            
 
 
         .section__title--burgers{color: #ffffff;
         line-height: 1}
 
        .burgers__content-item{ flex-direction: row;
-        display: flex;}
+        display: flex;
+    position: relative;
+padding-top: rem(40px);
+padding-bottom: rem(40px);
+}
 
         .burgers__description{
             color: #fff;
@@ -60,15 +71,15 @@
 
         .burgers__kkal {
             position: absolute;
-            bottom: 20%;
-            left: 5%;
+            bottom: 0;
+            left: 0;
             opacity: 0.5;
         }
 
         .burgers__kkal-sum {
             position: absolute;
-            top: 55%;
-            left: 50%;
+            top: rem(40px);
+            left: rem(30px);
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
@@ -79,8 +90,8 @@
 
         .burgers__kkal-name {
             position: absolute;
-            top: 100%;
-            left: 50%;
+            top: rem(60px);
+            left: rem(30px);
             transform: translate(-50%);
         }
         .burgers__kkal-sum, .burgers__kkal-name {
@@ -99,8 +110,8 @@
             width: rem(80px);
             height: rem(80px);
             border-radius: 5%;
-            top: 15%;
-            left: 4%;
+            top: 0;
+            left: 0;
             flex-direction: column;
             align-items: center;
             cursor: pointer;
@@ -123,6 +134,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin-bottom: rem(10px)
                 }
 
                 .burgers__dropdown {
@@ -163,7 +175,23 @@
           
             
                
-            
+                .bx-wrapper {
+                    background: none;
+                    border:none;
+                    box-shadow: none;
+                }
+              
+                .bx-wrapper .bx-next {
+                    background:none;
+                }
+              
+                .bx-wrapper .bx-prev {
+                  background:none;
+              }
+              
+               .bx-wrapper .bx-pager{
+                   display: none;
+               }
              
          
 
